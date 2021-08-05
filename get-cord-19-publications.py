@@ -27,7 +27,6 @@ row.insert(0, latest_date)
 latest_data = dict(zip(describe, row)
 
 # Load previously collected data, append latest, and save file to repo
-historical_data = pd.read_csv('data/CORD-19-historical-releases.csv').reset_index()
-historical_data = historical_data.append(latest_data, ignore_index=True)
+historical_data = pd.read_csv('data/CORD-19-historical-releases.csv')
+historical_data = historical_data.append(latest_data, ignore_index=True).sort_values('Date', ascending=False)
 historical_data.to_csv('data/CORD-19-historical-releases.csv', index=False)
-
