@@ -2,7 +2,7 @@ name: get-cord-19-publication-data
 
 on:
   schedule:
-    - cron: '10 10 * * 2' # runs on the 10th of every month
+    - cron: '10 10 * * 2' # runs at 10:10 on Tuesday
 
 jobs:
   build:
