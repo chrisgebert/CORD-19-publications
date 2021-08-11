@@ -14,7 +14,7 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text)
 latest_date = soup.td.get_text()
 
-# Create date column
+# Get date and create column titles
 date = str(datetime.date.today() - datetime.timedelta(days = 1))
 describe = ['Date', 'Article Count', 'Mean Author Count', 'Std Author Count', 'Min Author Count', '25% Percentile', '50% Percentile', '75% Percentile', 'Max Author Count']
 
