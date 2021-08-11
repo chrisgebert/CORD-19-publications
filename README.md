@@ -1,6 +1,6 @@
-# CORD-19 Dataset Author Statistics
+![get-latest-cord-19-publication-data](https://github.com/chrisgebert/CORD-19-publications/actions/workflows/get-latest-cord-19-publication-data/badge.svg)
 
-![example workflow](https://github.com/chrisgebert/CORD-19-publications/actions/workflows/get-latest-cord-19-publication-data/badge.svg)
+# CORD-19 Dataset Author Statistics
 
 The CORD-19 dataset of COVID-19 publications is published weekly at [CORD-19 Historical Releases](https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/historical_releases.html). 
 
