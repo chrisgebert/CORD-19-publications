@@ -1,4 +1,4 @@
-![get-latest-cord-19-publication-data](https://github.com/chrisgebert/CORD-19-publications/actions/workflows/get-latest-cord-19-publication-data/badge.svg)
+![get-latest-cord-19-publication-data](https://github.com/chrisgebert/CORD-19-publications/workflows/get-latest-cord-19-publication-data/badge.svg)
 
 # CORD-19 Dataset Author Statistics
 
