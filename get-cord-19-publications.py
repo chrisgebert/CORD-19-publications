@@ -24,7 +24,7 @@ cord_19['author_list'] = cord_19['authors'].astype(str).apply(lambda x: x.split(
 cord_19['author_count'] = cord_19['author_list'].str.len()
 row = cord_19['author_count'].describe().tolist()
 row.insert(0, latest_date)
-latest_data = dict(zip(describe, row)
+latest_data = dict(zip(describe, row))
 
 # Load previously collected data, append latest, and save file to repo
 historical_data = pd.read_csv('data/CORD-19-historical-releases.csv')
