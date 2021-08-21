@@ -1,7 +1,8 @@
 name: get-latest-cord-19-publication-data
 
 on:
-  workflow_dispatch: 
+  schedule:
+    - cron: '10 1 2 * *' # runs on the 2nd of every month at 1:10am
 
 jobs:
   build:
