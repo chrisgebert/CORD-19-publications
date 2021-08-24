@@ -2,7 +2,7 @@ name: get-latest-cord-19-publication-data
 
 on:
   schedule:
-    - cron: '10 1 * * *' # runs on the 2nd of every month at 1:10am
+    - cron: '10 12 * * 2' # runs Tuesday at 12:10pm UTC
 
 jobs:
   build:
