@@ -25,7 +25,8 @@ if latest_date != historical_data.loc[0]['Date']:
   # Load dataframe of metadata from CORD-19 Dataset and process author data
   cord_19 = pd.read_csv('https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/' + latest_date + '/metadata.csv', parse_dates=['publish_time'])
   cord_19['author_list'] = cord_19['authors'].astype(str).apply(lambda x: x.split(';'))
-  cord_19['author_count'] = cord_19['author_list'].str.len()row = cord_19['author_count'].describe().tolist()
+  cord_19['author_count'] = cord_19['author_list'].str.len()
+  row = cord_19['author_count'].describe().tolist()
   row.insert(0, latest_date)
   latest_data = dict(zip(describe, row))
   
