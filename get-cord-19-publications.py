@@ -20,7 +20,7 @@ describe = ['Date', 'Article Count', 'Mean Author Count', 'Std Author Count', 'M
 '25% Percentile', '50% Percentile', '75% Percentile', 'Max Author Count']
 
 # Check if latest dataset date is not in historical data file
-historical_data = pd.read_csv('data/CORD-19-historical-releases.csv', dtypes={'Article Count': 'int64', \
+historical_data = pd.read_csv('data/CORD-19-historical-releases.csv', dtype={'Article Count': 'int64', \
 'Min Author Count': 'int64', '25% Percentile': 'int64', '50% Percentile': 'int64', '75% Percentile': 'int64', \
 'Max Author Count': 'int64'})
 
