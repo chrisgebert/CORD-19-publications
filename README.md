@@ -9,4 +9,17 @@ In order to understand the distribution of authors on papers in this dataset, th
 - calculates author statistics on publications in that dataset, 
 - appends the latest statistics to the [data file](/data/CORD-19-historical-releases.csv)
 
+| Author Statistics | Description |
+| --- | --- |
+| `Date` | Date of CORD-19 release |
+| `Article Count` | Total number of articles in the dataset |
+| `Mean Author Count` | Mean number of authors per paper |
+| `Std Author Count` | Standard deviation of authors per paper |
+| `Min Author Count` | Minimum number of author per paper in dataset |
+| `25% Percentile` | 25% percentile of number of authors per paper in dataset |
+| `50% Percentile` | 50% percentile of number of authors per paper in dataset |
+| `75% Percentile` | 75% percentile of number of authors per paper in dataset |
+| `Max Author Count` | Maximum number of authors per paper in dataset |
+
+
 Inspired by: [https://github.com/canovasjm/covid-19-san-juan](https://github.com/canovasjm/covid-19-san-juan)
